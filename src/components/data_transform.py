@@ -15,12 +15,12 @@ from src.logger import logging
 from src.utils import save_object
 
 @dataclass
-class DataTranformaionConfig:
+class DataTranformationConfig:
     preprocessor_obj_file_path = os.path.join('artifact','preprocessor.pkl')
 
 class DataTranformation:
     def __init__(self):
-        self.data_transformation_config=DataTranformaionConfig()
+        self.data_transformation_config=DataTranformationConfig()
 
     def get_data_transformer_object(self):
         '''
