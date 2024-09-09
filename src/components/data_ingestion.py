@@ -25,7 +25,7 @@ class DataIngestion:
         logging.info("Entered the data Ingestion method or component")
         try:
             # read the dataset from anywhere
-            df = pd.read_csv('src/notebook/data/stud.csv')
+            df = pd.read_csv('notebook/data/stud.csv')
             logging.info("Read dataset as df")
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok=True)
